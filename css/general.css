@@ -86,6 +86,7 @@ p {
   padding-bottom: 2rem;
   max-width: 65ch;
   font-family: "inter";
+  line-height: 1.6rem;
 }
 h2 {
   font-size: var(--headline2-size);
