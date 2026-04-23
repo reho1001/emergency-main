@@ -54,7 +54,7 @@ h1 {
 }
 #frontpage h1 {
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 3rem;
   margin-block: 3rem 2rem;
   margin-bottom: 1.5rem;
   color: red;
@@ -92,6 +92,7 @@ h2 {
   font-size: var(--headline2-size);
   padding-bottom: 0.5rem;
   font-family: "Bungee Inline";
+  line-height: 2rem;
 }
 h3 {
   font-size: var(--headline3-size);
