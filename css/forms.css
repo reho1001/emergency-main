@@ -30,3 +30,50 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+
+/****************** Forms ******************/
+form {
+  display: grid;
+  gap: 2rem;
+  accent-color: red;
+}
+.form-group {
+  display: grid;
+  gap: 0.5rem;
+}
+label:has(input) {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+:focus-visible {
+  outline: 3px solid red;
+  outline-offset: 1px;
+}
+
+input {
+  border: 1px solid grey;
+  border-color: blue;
+  border-radius: 8px;
+  padding: 10px 10px;
+}
+.register_btn {
+  background-color: midnightblue;
+  color: white;
+  border: none;
+  border-radius: 60%;
+  padding: 8px 8px;
+  cursor: pointer;
+  max-width: 50px;
+}
+.register_btn:hover {
+  background-color: blue;
+}
+.error-message {
+  color: red;
+  display: none;
+}
+.form-group:has(:required) label::after {
+  content: " *";
+  color: red;
+}

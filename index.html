@@ -10,7 +10,15 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/png" href="img/fav.png">
+  <link rel="icon" type="image/png" href="imgs/logo-header.webp">
   <title>Emergency Site</title>
 </head>
 
@@ -18,46 +26,261 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html"> <img src="imgs/logo-header.webp" alt="logo"></a>
       </div>
       <ul class="menu">
-        <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
-        <li><a class="menuItem" href="register.html">Indberet</a></li>
+        <li><a class="menuItem" href="instruction.html">Nødsituation</a></li>
+        <li><a class="menuItem" href="register.html">Spørgsmål?</a></li>
       </ul>
       <button class="burger">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
       </button>
+      <button class="darkmode_btn">Dark mode</button>
     </nav>
   </header>
 
   <main>
-
+    <section>
+      <div class="grid_1-1">
+        <img class="index-img" src="imgs/index-3.webp" alt="figur">
+        <div class="index-text-1">
+          <h1>Ingen strøm? Følg "HOW-TO-EL" - guiden</h1>
+          <p>Er du lige flyttet ind i din første lejlighed og allerede er overvældet over alle de praktiske ting, der
+            følger med? Og er særligt strøm en uoverskuelig opgave? Så er denne guide alt, du har brug for!</p>
+          <a href="instruction.html" class="index-a">Se mere</a>
+        </div>
+      </div>
+    </section>
+    <section class="grid_1-1-1">
+      <article class="artikel-1">
+        <h2>Guide: Her er alt, du skal vide, inden du bestiller strøm første gang</h2>
+        <p>At flytte ind i en ny lejlighed er en spændende oplevelse, men det kan hurtigt blive en udfordring, hvis du
+          glemmer at bestille strøm. Hvad koster strøm egentlig, og hvad betaler du for? Denne guide vil hjælpe dig med
+          at navigere i strømleverandørernes verden, så du kan træffe informerede beslutninger.</p>
+        <img src="imgs/lightbulb.png" alt="lightbulb">
+        <button popovertarget="artikel1_popover">Læs mere</button>
+        <div id="artikel1_popover" popover>
+          <div>
+            <div>
+              <h2>Guide: Her er alt, du skal vide, inden du bestiller strøm første gang</h2>
+              <img src="imgs/lightbulb.png" alt="lightbulb">
+              <h3>Forstå strømpriserne</h3>
+              <p>Fast og Variabel Tarif: Strømpriser kan være faste eller variable. Faste priser forbliver de samme i en
+                bestemt periode,
+                mens variable priser kan ændre sig månedligt. Overvej, hvad der passer bedst til dit budget.
+              </p>
+              <p>KWh-pris: Du betaler for elektricitet pr. kilowatt-time (kWh). Jo mere energi du bruger, desto højere
+                bliver din
+                regning. Hold øje med din energiforbrug for at undgå overraskelser.</p>
+              <h3>Vælg den rette Leverandør</h3>
+              <p>Sammenligning: Brug online sammenligningssider til at finde de bedste tilbud. Tjek anmeldelser og
+                kundeservice
+                vurderinger for at sikre, at du vælger en pålidelig leverandør.</p>
+              <p>Bindingsperiode: Vær opmærksom på, om der er en bindingsperiode. Nogle aftaler kan låse dig fast i en
+                længere periode,
+                hvilket kan være en ulempe, hvis du ønsker fleksibilitet.</p>
+              <h3>Vær opmærksom på skjulte omkostningerne</h3>
+              <p>Abonnementsafgifter: Nogle leverandører opkræver månedlige abonnementsafgifter, udover selve
+                strømforbruget. Sørg for at læse det med småt!</p>
+              <p>Nettoafgifter: Husk, at strømregningen også inkluderer afgifter til netdrift. Disse omkostninger går
+                til
+                vedligeholdelse
+                af elnettet og kan variere afhængigt af, hvor du bor.</p>
+              <h3>Bestilling af strøm</h3>
+              <p>Dokumentation: Når du bestiller strøm, skal du have nogle oplysninger klar, som dit CPR-nummer,
+                adresse,
+                og
+                evt. tidligere måleraflæsninger.</p>
+              <p>Tid til tilslutning: Vær opmærksom på, at det kan tage et par dage, før strømmen er tilsluttet. Det er
+                en
+                god idé at bestille strøm i god tid, så du ikke står uden lys, når du flytter ind.</p>
+              <button popovertarget="artikel1_popover">LUK</button>
+            </div>
+          </div>
+      </article>
+      <article class="artikel-2">
+        <h2>Ingen strøm. Ingen kontrol. Kun dig – og mørket. Sådan overlever du i en lejlighed uden strøm
+        </h2>
+        <p>Stilhed. Mørke. Ingen summen fra køleskabet. Intet lys, når du klikker løs på kontakten. Ingenting. Ingen
+          strøm
+          overhovedet. Du er nu overladt til dig selv. Men bare rolig – du kan godt klare det, hvis du læser med her.
+        </p>
+        <img src="imgs/checklist.jpg" alt="checklist">
+        <button popovertarget="artikel2_popover">Læs mere</button>
+        <div id="artikel2_popover" popover>
+          <div>
+            <h2>Ingen strøm. Ingen kontrol. Kun dig – og mørket. Sådan overlever du i en lejlighed uden strøm</h2>
+            <h3>Bevar roen – selv når mørket føles tungt</h3>
+            <p>Det første chok rammer hurtigt. Du står midt i flyttekasser, uden lys, uden overblik. Pulsen stiger. Stop
+              op. Træk
+              vejret. Du skal nok få strøm igen – men indtil da handler det om at overleve ventetiden. Få bestilt strøm
+              (se artikel
+              1), og find det, du kan bruge her og nu: stearinlys, en lommelygte, måske din mobil som sidste lyskilde.
+              Flammerne fra
+              et stearinlys kan føles som din eneste allierede – men husk: de er lige så farlige, som de er trygge. Hold
+              øje med dem.
+            </p>
+            <h3>Kampen om maden</h3>
+            <p>Dit køkkenbord er fyldt. Madvarer, der langsomt bevæger sig mod forfald. Uden strøm er tiden imod dig. Du
+              må tænke
+              hurtigt. Har du en køleboks? Brug den. Fyld den med is fra nærmeste butik. Ingen køleboks? Så må du
+              improvisere – selv
+              en vask fyldt med is kan blive din redning. Spis strategisk. Start med det, der ikke overlever længe. Og
+              accepter
+              virkeligheden: Nu er det simpelt. Ingen komfur. Ingen ovn. Kun det, der kan spises direkte – sandwiches,
+              wraps, nødder,
+              barer, frugt. Overlevelsesmad.</p>
+            <h3>Når mørket falder på – gør det til dit</h3>
+            <p>Mørket kan føles klaustrofobisk. Eller… magisk. Det er dit valg. Tænd stearinlys. Inviter venner over.
+              Lav
+              en improviseret middag i flammernes skær. Bed dem tage batterier, powerbank eller andet, du har brug for.
+              Grin,
+              spil og lad mørket blive en kulisse i stedet for en fjende. For midt i kaosset gemmer der sig noget
+              uventet:
+              en pause
+              fra det hele.</p>
+            <h3>Din livline: batteriet</h3>
+            <p>Din telefon er ikke bare en telefon længere – den er din forbindelse til verden. Og batteriet? Det er
+              tid.
+              Sluk alt
+              unødvendigt. Hver procent tæller. Hvis du har en powerbank, er du heldig. Hvis ikke, må du opsøge
+              civilisationen: en
+              café, et sted med lys, varme og stikkontakter. Sæt dig ned. Bestil en kaffe. Lad dine enheder genoplade –
+              og
+              måske også
+              dig selv.</p>
+            <h3>Stilheden – din nye virkelighed</h3>
+            <p>Ingen skærme. Ingen støj. Kun dig og dine tanker. Det kan føles ubehageligt. Eller befriende. Find et
+              brætspil frem. Læs
+              en bog. Tegn. Skriv. Eller sid bare stille et øjeblik. For hvornår gør du egentlig det?</p>
+            <h3>Lær af mørket</h3>
+            <p>Når strømmen endelig vender tilbage, og lyset blænder dig, er det fristende bare at gå videre. Men stop
+              op
+              et øjeblik.
+              For du har lige været igennem noget. Brug det. Forbered dig. Lav dit eget nødkit: lommelygte, batterier,
+              stearinlys,
+              tændstikker, powerbank, snacks, måske et gasblus. Næste gang står du ikke magtesløs.</p>
+            <img src="imgs/checklist.jpg" alt="liste">
+            <button popovertarget="artikel2_popover">LUK</button>
+          </div>
+        </div>
+      </article>
+      <article class="artikel-3">
+        <h2>Fortælling om Min første nødsituation</h2>
+        <p>Et klik på kontakten – og ingenting skete. Det skulle have været starten på et nyt kapitel. I stedet stod jeg
+          alene i mørket – midt i min første nødsituation. Læs historien om det døgn, hvor jeg gik fra total kontrol til
+          totalt mørke og langsomt fandt vej tilbage til
+          lyset.</p>
+        <img src="imgs/emergency.png" alt="emergency">
+        <button popovertarget="artikel3_popover">Læs mere</button>
+        <div id="artikel3_popover" popover>
+          <div>
+            <h2>Fortælling om livet uden strøm: "Fra mørke til lys"</h2>
+            <img src="imgs/emergency.png" alt="emergency">
+            <p>Jeg havde forestillet mig det øjeblik så mange gange. Nøglen i hånden. Min egen hoveddør. Et lille klik –
+              og så var det
+              officielt: mit liv, mit sted, mit ansvar. Jeg stod foran opgangen med det første læs: en fyldt
+              backpackerrygsæk og to
+              propfyldte IKEA-poser. Senere ville et flyttehold komme med resten, og jeg havde været så smart at
+              bestille
+              dagligvarer
+              til levering et par timer senere. I kroppen sad den velkendte blanding af frihed og nervøsitet. Jeg anede
+              bare ikke,
+              hvad jeg havde overset. Lejligheden duftede af støv og noget indelukket, da jeg åbnede døren første gang.
+              Solen faldt
+              skråt ind gennem vinduerne og tegnede firkanter på det rå trægulv. Jeg stillede mine ting og gik rundt,
+              som
+              om jeg
+              trådte ind i en scene, jeg endnu ikke kendte replikkerne til. “Her skal min sofa stå,” sagde jeg højt. “Og
+              her… måske et
+              spisebord?” Timerne gik roligt. Jeg tørrede køkkenbordet af, åbnede vinduerne og lod musik fylde rummet.
+              Jeg
+              dansede
+              mellem kasserne og ignorerede, hvor meget der manglede. Flytteholdet kom. Varerne blev leveret. Tingene
+              faldt på plads.
+              Jeg var euforisk. Først da solen gik ned, ændrede stemningen sig. Jeg trykkede på kontakten. Klik.
+              Ingenting. Jeg
+              prøvede igen. Klik. Stadig mørke. Jeg gik ud i gangen. Klik. Mørke. Uroen bredte sig. Jeg tændte
+              lommelygten. Skyggerne
+              voksede. Jeg stod foran eltavlen. “Hvad gør man?” Intet reagerede. Ingen klik, ingen summen. Kun stilhed.
+              Jeg satte mig
+              på køkkengulvet. Hvad er det, jeg har overset? Jeg havde googlet alt. Undtagen det her.
+            </p>
+            <p>Jeg googlede igen: “ingen strøm ny lejlighed hvad gør man”, “skal man bestille el selv???” Svaret var
+              entydigt. Ja. Jeg
+              ringede til min mor. “Mor… der er ikke noget strøm.” “Har du tjekket sikringerne?” “Ja… jeg tror, det er
+              fordi, jeg ikke
+              har bestilt el.” En pause. “Åh skat… det har du ikke?” Hun lød ikke overrasket. “Det er okay. Det fik jeg
+              heller ikke
+              styr på første gang.” Jeg lagde på. Klokken var for mange. Jeg kunne ikke gøre mere. Og så ramte næste
+              problem. Maden.
+              Jeg åbnede køleskabet. Mørke. Stilstand. Mælk, yoghurt og kødpålæg – en tikkende tidsbombe. Jeg googlede
+              igen og indså
+              det åbenlyse: et køleskab uden strøm er bare et skab. Jeg trak jakken på, gik ned i kiosken, købte
+              isterninger og
+              skyndte mig tilbage. I køkkenet fordelte jeg isen i skåle, lagde varerne ned til dem, dækkede det hele med
+              et
+              viskestykke og satte det ind i køleskabet. En improviseret løsning. Men en løsning. Den nat sov jeg i
+              stilhed. Telefonen
+              lå ved siden af mig som en livline med 15 procent tilbage.
+            </p>
+            <p>Næste morgen vågnede jeg tidligt. Solen var tilbage. Min telefon havde 4 procent. Jeg tog tøj på, greb
+              mobil og oplader
+              og gik ud. På en café fandt jeg strøm, wifi og overblik. Jeg begyndte at undersøge elselskaber. Der var
+              flere, end jeg
+              havde regnet med. Jeg ringede. “Skal vi sætte det i gang med det samme?” Jeg havde lyst til at sige ja,
+              men
+              holdt igen.
+              Sammenlign priser. Jeg ringede videre. Næste selskab. Tredje. Fjerde. Jeg noterede, spurgte, forstod
+              halvt.
+              Efter fem
+              opkald ringede jeg tilbage til det tredje. “Jeg tror… jeg tager det her.” “Godt valg.” Tilbage i
+              lejligheden
+              ventede
+              jeg. Timerne gik. Jeg pakkede ud, drak vand fra hanen, spiste en tør bolle og hentede nye isterninger, så
+              maden holdt
+              sig kold. Jeg trykkede på kontakten igen og igen. Klik. Ingenting. Indtil. Klik. Et blink. Og så – lys.
+              Rummet ændrede
+              sig øjeblikkeligt. Fra tomt til levende. Jeg stod stille og trak vejret. Det havde taget et døgn. Alt for
+              mange opkald.
+              En hel del hjertebanken. Men jeg havde gjort det selv. Og næste gang jeg flytter, er der én ting, jeg ikke
+              glemmer.</p>
+            <button popovertarget="artikel3_popover">LUK</button>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="fullwidth">
+      <div class="grid_1-1">
+        <img class="index-img2" src="imgs/question.webp" alt="logo">
+        <div class="index-text">
+          <h2>Spørgsmål?</h2>
+          <p>Er du ikke blevet klogere eller du undrer dig over noget relateret til el/strøm, så
+            skriv til os her</p>
+          <a href="register.html" class="index-a">Se mere</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <nav>
       <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
+        <li>
+          <p>Kontakt & Info</p>
+        </li>
       </ul>
       <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
+        <li><a href="index.html"> <img class="imgfooter" src="imgs/titel-2.webp" alt="Logo"></a></li>
       </ul>
       <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
+        <p>FAQ</p>
       </ul>
     </nav>
   </footer>
+  <script src="js/darkmode.js"></script>
 </body>
 
 </html>

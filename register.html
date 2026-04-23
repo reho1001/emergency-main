@@ -10,8 +10,16 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
-  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/png" href="img/fav.png">
+  <link rel="icon" type="image/png" href="imgs/logo-header.webp">
   <title>Emergency Site</title>
 </head>
 
@@ -19,58 +27,88 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html"> <img src="imgs/logo-header.webp" alt="logo"></a>
       </div>
       <ul class="menu">
-        <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
-        <li><a class="menuItem" href="register.html">Indberet</a></li>
+        <li><a class="menuItem" href="instruction.html">Nødsituation</a></li>
+        <li><a class="menuItem" href="register.html">Spørgsmål?</a></li>
       </ul>
       <button class="burger">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
       </button>
+      <button class="darkmode_btn">Dark mode</button>
     </nav>
   </header>
 
   <main>
-    <h1>INDBERET</h1>
+    <h1>SPØRGSMÅL?</h1>
     <section id="form-section">
       <article id="form-info">
-        <h2>Overskrift</h2>
-        <p>Tekst</p>
+        <h2>Kontaktformular</h2>
+        <p>Hvis du ikke er blevet klogere af denne side eller du undrer dig over noget relateret til el/strøm, så skriv
+          til os her</p>
       </article>
-      <form id="webform"></form>
+      <form id="webform">
+        <div class="form-group">
+          <label for="first_name">Fornavn</label>
+          <input type="text" id="first_name" name="first_name" required />
+          <p class="error-message">Please enter a value</p>
+        </div>
+        <div class="form-group">
+          <label for="last_name">Efternavn</label>
+          <input type="text" id="last_name" name="last_name" required />
+          <p class="error-message">Please enter a value</p>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <p class="error-message">Please enter a value</p>
+        </div>
+        <div class="form-group">
+          <label for="besked">Besked</label>
+          <textarea type="text" id="besked" name="besked" required rows="5"></textarea>
+          <p class="error-message">Please enter a value</p>
+        </div>
+        <div class="form-group">
+          <label for="terms">
+            <input type="checkbox" id="terms" name="accept_terms" value="yes" required />
+            Accepter betingelser</label>
+          <p class="error-message">Please tick the box</p>
+        </div>
+        <button class="register_btn" type="submit">Send</button>
+      </form>
     </section>
     <section id="form-summary">
-      <h2>Summary</h2>
+      <h2>Opsummering</h2>
       <article>
-        <p class="placeholder">Opsummering</p>
+        <!-- <p class="placeholder">Opsummering</p> -->
+        <p>Fornavn: <span id="first_name_output"> </span></p>
+        <p>Efternavn: <span id="last_name_output"></span></p>
+        <p>Email: <span id="email_output"></span></p>
+        <p>Besked: <span id="besked_output"></span></p>
       </article>
     </section>
   </main>
+
   <footer>
     <nav>
       <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
+        <li>
+          <p>Kontakt & Info</p>
+        </li>
       </ul>
       <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
+        <li><a href="index.html"> <img class="imgfooter" src="imgs/titel-2.webp" alt="Logo"></a></li>
       </ul>
       <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
+        <p>FAQ</p>
       </ul>
     </nav>
   </footer>
+  <script src="js/register.js"></script>
+  <script src="js/darkmode.js"></script>
 </body>
 
 </html>

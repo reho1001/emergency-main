@@ -8,13 +8,16 @@
 }
 .info-graphic {
   border-radius: 0;
-  margin: 60px auto 80px auto;
+  margin: 100px auto 100px auto;
+}
+.info-graphic svg {
+  width: 100%;
 }
 .info-text h2 {
   line-height: 3rem;
   text-align: center;
   background-color: var(--color-headline-bg);
-  color: var(--color-text);
+  color: var(--color-text-inverted);
   margin-bottom: 1rem;
 }
 .info-text h3 {
